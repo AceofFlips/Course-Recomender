@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/000-CreateDb.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/001-CreateOtherReqsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/002-CreateCreditsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/003-DepartmentsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/004-PathwaysTbl.sql" dialect="MySQL" />
+    <file url="PROJECT" dialect="MySQL" />
+  </component>
+</project>
