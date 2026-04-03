@@ -6,6 +6,12 @@
     <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/002-CreateCreditsTbl.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/003-DepartmentsTbl.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/004-PathwaysTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/006-CoursesOtherReqsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/007-CoursesCreditsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/008-CoursesPathways.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/009-CoursesYears.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/010-CoursesPrereqs.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/011-CoursesVersions.sql" dialect="MySQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>
