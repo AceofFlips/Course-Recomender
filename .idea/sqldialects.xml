@@ -2,10 +2,11 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/000-CreateDb.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/001-CreateOtherReqsTbl.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/002-CreateCreditsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/001-OtherReqsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/002-CreditsTbl.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/003-DepartmentsTbl.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/004-PathwaysTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/005-CoursesTbl.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/006-CoursesOtherReqsTbl.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/007-CoursesCreditsTbl.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/008-CoursesPathways.sql" dialect="MySQL" />

@@ -1,6 +1,6 @@
 CREATE TABLE IF NOT EXISTS Courses(
    `id` int NOT NULL PRIMARY KEY AUTO_INCREMENT,
-   `c_id` NVARCHAR(8) NOT NULL UNIQUE, /* Id of the course as listed on the school's id system */
+   `c_id` NVARCHAR(12) NOT NULL UNIQUE, /* Id of the course as listed on the school's id system */
    `course_name` NVARCHAR(64) NOT NULL, /* Name of the course */
    `class_name` NVARCHAR(64), /* Alternate/Display name of the course */
     `dep_id` INT NOT NULL,
@@ -18,3 +18,6 @@ CREATE TABLE IF NOT EXISTS Courses(
     INDEX `ix_c_id`(`c_id`),
     INDEX `ix_course_name`(`course_name`)
 );
+
+ALTER TABLE Courses
+MODIFY `c_id` NVARCHAR(12) NOT NULL UNIQUE;
