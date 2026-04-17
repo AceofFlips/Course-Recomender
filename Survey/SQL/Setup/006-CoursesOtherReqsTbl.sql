@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS CourseOtherReqs
+CREATE TABLE IF NOT EXISTS CoursesOtherReqs
 (
     c_id INT NOT NULL,
     other_id INT NOT NULL,
