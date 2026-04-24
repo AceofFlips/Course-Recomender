@@ -1,6 +1,6 @@
-const express = require('express');
+import express from 'express'
+import testData from '../services/testservice.js'
 const router = express.Router();
-const testData = require('../services/testservice');
 
 /* GET programming languages. */
 router.get('/', async function(req, res, next) {
@@ -20,4 +20,4 @@ router.get('/:id', async function(req, res, next) {
     }
 });
 
-module.exports = router;
+export default router;

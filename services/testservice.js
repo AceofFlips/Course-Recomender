@@ -1,11 +1,11 @@
-const db = require('./database');
-const helper = require('../helpers');
-const config = require('../config');
+import db from './database.js'
+import helper from '../helpers.js'
+import config from '../config.js'
 
 async function getMultiple(page = 1){
     const offset = helper.getOffset(page, config.listPerPage);
     const rows = await db.query(
-        `SELECT * FROM courses LIMIT ${offset},${config.listPerPage}`
+        `SELECT * FROM Courses LIMIT ${offset},${config.listPerPage}`
     );
     const data = helper.emptyOrRows(rows);
     const meta = {page};
@@ -24,7 +24,7 @@ async function searchCourses(id){
 }
 
 
-module.exports = {
+export default {
     getMultiple,
     searchCourses
 }

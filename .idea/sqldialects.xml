@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Procedures/013-JoinOnForKey.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Procedures/014-ShowSelectColumns.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Procedures/015-JoinAllTables.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/000-CreateDb.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/001-OtherReqsTbl.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/002-CreditsTbl.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/003-DepartmentsTbl.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/004-PathwaysTbl.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/005-CoursesTbl.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/006-CoursesOtherReqsTbl.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/007-CoursesCreditsTbl.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/008-CoursesPathways.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/009-CoursesYears.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/010-CoursesPrereqs.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/011-CoursesVersions.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/Survey/SQL/Setup/012-Users.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Procedures/013-JoinOnForKey.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Procedures/014-ShowSelectColumns.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Procedures/015-JoinAllTables.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/000-CreateDb.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/001-OtherReqsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/002-CreditsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/003-DepartmentsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/004-PathwaysTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/005-CoursesTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/006-CoursesOtherReqsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/007-CoursesCreditsTbl.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/008-CoursesPathways.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/009-CoursesYears.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/010-CoursesPrereqs.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/011-CoursesVersions.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/SQL/Setup/012-Users.sql" dialect="MySQL" />
     <file url="PROJECT" dialect="MySQL" />
   </component>
 </project>

@@ -1,7 +1,9 @@
-const express = require('express');
+import path from 'path';
+import {fileURLToPath} from 'url';
+import express from 'express';
+import testRouter from "./routes/testroute.js";
 const app = express();
 const port = 8080;
-const testRouter = require("./routes/testroute");
 
 // Define a route for GET requests to the root URL
 app.use(express.json());
@@ -10,8 +12,12 @@ app.use(
         extended: true,
     })
 );
-app.get("/", (req, res) => {
-    res.json({ message: "ok" });
+app.get("/", (req, res, next) => {
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = path.dirname(__filename);
+    const _retfile = path.join(__dirname, 'Home-Page.html');
+
+    res.sendFile(_retfile);
 });
 
 app.use("/test", testRouter);
