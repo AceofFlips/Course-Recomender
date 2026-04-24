@@ -7,7 +7,13 @@ async function query(sql, params) {
 
     return results;
 }
+async function callGetCourseById(id) {
+    const connection = await mysql.createConnection(config.db);
+    const [results, ] = await connection.query('CALL GetCourseById('+id+')');
 
+    return results;
+}
 module.exports = {
-    query
+    query,
+    callGetCourseById
 }

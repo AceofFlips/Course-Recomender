@@ -15,7 +15,16 @@ async function getMultiple(page = 1){
         meta
     }
 }
+async function searchCourses(id){
+    const rows = await db.callGetCourseById(id);
+    const data = helper.emptyOrRows(rows);
+    return {
+        data
+    }
+}
+
 
 module.exports = {
-    getMultiple
+    getMultiple,
+    searchCourses
 }

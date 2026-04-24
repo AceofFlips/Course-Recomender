@@ -1,0 +1,4 @@
+CREATE PROCEDURE IF NOT EXISTS GetAllCourses()
+BEGIN
+    SELECT * FROM Courses;
+end;
