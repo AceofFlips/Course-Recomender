@@ -20,11 +20,11 @@
         grid-template-rows: 1fr auto;
     }
 
-    header, footer{
+    header, footer {
         padding: 1em;
     }
 
-    div#Use, #Edit, #Password, #Email, #Saved, #Filter, #Xello{
+    div#Use, #Edit, #Password, #Email, #Saved, #Filter, #Xello {
         position: relative;
         left: 20%;
         width: 60vw;
@@ -41,10 +41,10 @@
         padding: 5px;
         transition: transform 0.1s ease, box-shadow 0.1s ease;
     }
-    .log{
+    .log {
         margin-right: 100px;
     }
-    .nav-item{
+    .nav-item {
         background-color: white;
         border: 2px solid black;
     }
@@ -53,26 +53,33 @@
         opacity: 1;
         margin-top: 10px;
     }
-    a{
+    a {
         text-decoration: none;
     }
-    .Question{
+    .Question {
         height: 70px;
         width: 600px;
         border-style: solid;
         border-width: 2px;
         border-radius: 5px;
-        margin: 1% 30% 17% 35%;
+        margin: 1% 30% 12% 35%;
     }
-    .Questions{
+    .Questions {
 
         border-style: solid;
         border-width: 2px;
         border-radius: 5px;
         margin: 13% 30% 1% 35%;
     }
-    .Answer{
+    .Answer {
         width: 600px;
+    }
+    .question {
+        display: none;
+    }
+
+    .question.active {
+        display: block;
     }
 </style>
 </head>
@@ -104,37 +111,136 @@
 
     <div>
         <div>
-            <div class="question active">
-                <h1 id="questionTitle" class="text-center Questions">Question #1</h1>
+            <div class="question">
+                <h1 class="text-center Questions questionTitle">Question #1</h1>
 
                 <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
                     Answer
                 </button>
 
                 <ul class="dropdown-menu">
-                    <li class="dropdown-item Answer" id="answerText">insert answer</li>
+                    <li class="dropdown-item Answer answerText">insert answer</li>
                 </ul>
             </div>
             <div class="question">
-                <h1 id="questionTitle" class="text-center Questions">Question #1</h1>
+                <h1 class="text-center Questions questionTitle">Question #2</h1>
 
                 <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
                     Answer
                 </button>
 
                 <ul class="dropdown-menu">
-                    <li class="dropdown-item Answer" id="answerText">insert answer</li>
+                    <li class="dropdown-item Answer answerText">insert answer</li>
                 </ul>
             </div>
             <div class="question">
-                <h1 id="questionTitle" class="text-center Questions">Question #1</h1>
+                <h1 class="text-center Questions questionTitle">Question #3</h1>
 
                 <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
                     Answer
                 </button>
 
                 <ul class="dropdown-menu">
-                    <li class="dropdown-item Answer" id="answerText">insert answer</li>
+                    <li class="dropdown-item Answer answerText">insert answer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h1 class="text-center Questions questionTitle">Question #4</h1>
+
+                <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
+                    Answer
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item Answer answerText">insert answer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h1 class="text-center Questions questionTitle">Question #5</h1>
+
+                <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
+                    Answer
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item Answer answerText">insert answer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h1 class="text-center Questions questionTitle">Question #6</h1>
+
+                <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
+                    Answer
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item Answer answerText">insert answer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h1 class="text-center Questions questionTitle">Question #7</h1>
+
+                <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
+                    Answer
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item Answer answerText">insert answer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h1 class="text-center Questions questionTitle">Question #8</h1>
+
+                <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
+                    Answer
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item Answer answerText">insert answer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h1 class="text-center Questions questionTitle">Question #9</h1>
+
+                <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
+                    Answer
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item Answer answerText">insert answer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h1 class="text-center Questions questionTitle">Question #10</h1>
+
+                <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
+                    Answer
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item Answer answerText">insert answer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h1 class="text-center Questions questionTitle">Question #11</h1>
+
+                <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
+                    Answer
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item Answer answerText">insert answer</li>
+                </ul>
+            </div>
+            <div class="question">
+                <h1 class="text-center Questions questionTitle">Question #12</h1>
+
+                <button class="dropdown-toggle Question" type="button" data-bs-toggle="dropdown">
+                    Answer
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item Answer answerText">insert answer</li>
                 </ul>
             </div>
         </div>
@@ -144,7 +250,7 @@
         <div class="d-flex justify-content-between mt-3">
 
             <!-- Back Button -->
-            <button type="button" class="btn btn-outline-secondary d-flex align-items-center gap-2" onclick="prevQuestion()"()">
+            <button type="button" class="btn btn-outline-secondary d-flex align-items-center gap-2" onclick="prevQuestion()">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 Back
             </button>
@@ -178,10 +284,10 @@
         let currentQuestion = 0;
 
         function showQuestion(index) {
-            // remove active from all
+            // add hidden from all
             questions.forEach(q => q.classList.remove("active"));
 
-            // add active to current
+            // remove hidden to current
             questions[index].classList.add("active");
         }
 
@@ -198,7 +304,8 @@
                 showQuestion(currentQuestion);
             }
         }
-        
+
+        showQuestion(currentQuestion);
 
 
         <!--footer link code  -->
