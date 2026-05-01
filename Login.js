@@ -4,33 +4,40 @@ var sumbitForm = document.getElementById("login-form");
 sumbitForm.addEventListener("submit", function(event) {
     event.preventDefault();
     var input = $("#login-form").serializeArray();
-    var canLogin = verifyLogin(input[0].value, input[1].value);
-    if (canLogin) {
-        console.log("Valid Login Credentials");
-    } else {
-        console.log("Invalid Login Credentials")
-    }
+    var canLogin;
+    //async thing to make it so the async function is called
+    (async () => {
+        const canLogin = await verifyLogin(input[0].value, input[1].value);
+        if (canLogin) {
+            window.location.replace("/Home-Page.html")
+        } else {
+            console.log("Invalid Credentials");
+        }
+        })();
 })
 
-async function verifyLogin(username, password) {
+async function verifyLogin(inputUser, inputPass) {
     try {
-        //get user credentials file
+        //get text file
         const response = await fetch('users.txt');
-        const text = await response.text();
-        //trim of edges
-        const lines = text.split(/\r?\n/);
-        //iterate through lines
+        const data = await response.text();
+
+        //split file by line
+        const lines = data.split('\n');
+
+        //loop through lines
         for (let line of lines) {
-            //split into username and password
+            //split lines into username and password
             const [storedUser, storedPass] = line.split(':');
-            //check to see if crednetials match
-            if (storedUser === username && storedPass === password) {
+
+            if (storedUser.trim() === inputUser && storedPass.trim() === inputPass) {
+                //return true if match found
                 return true;
-            } else {
-                return false;
             }
         }
-    } catch (err) {
-        console.error("Error reading file:");
+        //return false if no matches
+        return false;
+    } catch (error) {
+        console.error("Error reading user file:", error);
     }
 }
