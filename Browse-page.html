@@ -13,8 +13,34 @@
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Browse-page</title>
+    <style>
+        .SmallBox{
+            width: 300px;
+            height: 300px;
+            margin: 200px 100px;
+            border: 1px solid black;
+            float: left;
+        }
+        .BigBox{
+            width: 1000px;
+            height: 500px;
+            margin: 100px;
+            border: 1px solid black;
+            float: right;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
+
     <div class="row bg-primary align-items-center justify-content-center">
         <nav class="navbar navbar-expand navbar-light bg-primary">
             <div class="container-fluid">
@@ -35,18 +61,18 @@
         </nav>
     </div>
     <!--browser Content-->
-    <div class="float-left">
-
+    <div class="container-fluid text-center SmallBox">
+        <h6>placeholder Contact Info</h6>
     </div>
-    <div class="float-right">
-
+    <div class="container-fluid text-center BigBox">
+        <h1>placeholder Contact Info</h1>
     </div>
 
 
 
 
     <!--footer/links -->
-    <footer>
+    <footer class="footer">
         <div class="row h-100 bg-primary d-flex align-items-center justify-content-center">
             <div class="pt-1 pb-2 ps-2 pe-4 col-md-5">
                 <h5 class="text-white">Franklin Central High School Counseling Services</h5><br>
