@@ -24,7 +24,6 @@ app.get("/faq", (req, res, next) => {
     const __filename = fileURLToPath(import.meta.url);
     const __dirname = path.dirname(__filename);
     const _retfile = path.join(__dirname, 'FAQ-Page.html');
-
     res.sendFile(_retfile);
 });
 
