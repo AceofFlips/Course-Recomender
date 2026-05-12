@@ -13,7 +13,14 @@ async function callGetCourseById(id) {
 
     return results;
 }
+async function getAllCoursesNames() {
+    const connection = await mysql.createConnection(config.db);
+    const [results, ] = await connection.query('SELECT Courses.course_name FROM Courses');
+
+    return results;
+}
 export default {
     query,
-    callGetCourseById
+    callGetCourseById,
+    getAllCoursesNames
 }

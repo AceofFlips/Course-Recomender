@@ -23,8 +23,17 @@ async function searchCourses(id){
     }
 }
 
+async function allCoursesNames(){
+    const rows = await db.getAllCoursesNames()
+    const data = helper.emptyOrRows(rows);
+    return{
+        data
+    }
+}
+
 
 export default {
     getMultiple,
-    searchCourses
+    searchCourses,
+    allCoursesNames
 }

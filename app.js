@@ -43,6 +43,7 @@ app.get("/courses", (req, res, next) => {
 
     res.sendFile(_retfile);
 });
+app.use("/courses/names",testRouter);
 
 app.get("/survey", (req, res, next) => {
     const __filename = fileURLToPath(import.meta.url);

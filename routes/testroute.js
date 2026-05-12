@@ -20,4 +20,13 @@ router.get('/:id', async function(req, res, next) {
     }
 });
 
+router.get('/courses/names', async function(req, res, next) {
+    try{
+        res.json(await testData.allCoursesNames());
+    } catch (err) {
+        console.error(`Error while getting all courses `, err.message);
+        next(err);
+    }
+})
+
 export default router;
